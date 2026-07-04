@@ -1,0 +1,155 @@
+{
+  "scale_description": "Monk Skin Tone Scale 1-10. 1-2=Very Fair, 3-4=Fair, 5-6=Medium/Wheatish, 7-8=Deep/Brown, 9-10=Very Deep",
+  "segments": [
+    {
+      "id": "very_fair",
+      "monk_range": [1, 2],
+      "tone_range": [0, 20],
+      "label": "Very Fair",
+      "undertone": "cool_pink",
+      "best_colour_families": ["jewel_tones", "cool_blues", "deep_purples", "berry", "emerald", "navy", "burgundy", "cool_pastels"],
+      "avoid_colour_families": ["neon_yellow", "orange_red", "pale_peach"],
+      "best_colours": [
+        {"name": "Royal Blue", "hex": "#4169E1", "score": 95},
+        {"name": "Emerald Green", "hex": "#50C878", "score": 92},
+        {"name": "Deep Purple", "hex": "#6B2D8B", "score": 90},
+        {"name": "Burgundy", "hex": "#800020", "score": 90},
+        {"name": "Navy Blue", "hex": "#001F5B", "score": 88},
+        {"name": "Magenta", "hex": "#FF00FF", "score": 85},
+        {"name": "Teal", "hex": "#008080", "score": 85},
+        {"name": "Cobalt Blue", "hex": "#0047AB", "score": 88},
+        {"name": "Plum", "hex": "#8E4585", "score": 87},
+        {"name": "Forest Green", "hex": "#228B22", "score": 83},
+        {"name": "Lavender", "hex": "#E6E6FA", "score": 80},
+        {"name": "Dusty Rose", "hex": "#DCAE96", "score": 78},
+        {"name": "Ivory White", "hex": "#FFFFF0", "score": 75},
+        {"name": "Charcoal", "hex": "#36454F", "score": 82}
+      ],
+      "avoid_colours": [
+        {"name": "Neon Yellow", "hex": "#FFFF00", "score": 20},
+        {"name": "Orange Red", "hex": "#FF4500", "score": 25},
+        {"name": "Pale Peach", "hex": "#FFDAB9", "score": 30}
+      ]
+    },
+    {
+      "id": "fair",
+      "monk_range": [3, 4],
+      "tone_range": [21, 40],
+      "label": "Fair",
+      "undertone": "neutral_warm",
+      "best_colour_families": ["warm_neutrals", "pastels", "soft_blues", "rose", "coral", "warm_greens", "camel"],
+      "avoid_colour_families": ["neon", "very_pale_yellow"],
+      "best_colours": [
+        {"name": "Coral", "hex": "#FF7F50", "score": 93},
+        {"name": "Peach", "hex": "#FFCBA4", "score": 90},
+        {"name": "Warm Rose", "hex": "#FF66B2", "score": 88},
+        {"name": "Camel", "hex": "#C19A6B", "score": 87},
+        {"name": "Dusty Blue", "hex": "#6699CC", "score": 85},
+        {"name": "Sage Green", "hex": "#B2AC88", "score": 84},
+        {"name": "Terracotta", "hex": "#E2725B", "score": 86},
+        {"name": "Warm Beige", "hex": "#D4A574", "score": 83},
+        {"name": "Blush Pink", "hex": "#FFB6C1", "score": 88},
+        {"name": "Warm White", "hex": "#FAF0E6", "score": 80},
+        {"name": "Olive Green", "hex": "#808000", "score": 82},
+        {"name": "Rust", "hex": "#B7410E", "score": 85},
+        {"name": "Mauve", "hex": "#E0B0FF", "score": 83},
+        {"name": "Champagne", "hex": "#F7E7CE", "score": 79}
+      ],
+      "avoid_colours": [
+        {"name": "Neon Green", "hex": "#39FF14", "score": 22},
+        {"name": "Pale Yellow", "hex": "#FFFFE0", "score": 28},
+        {"name": "Neon Pink", "hex": "#FF6EC7", "score": 30}
+      ]
+    },
+    {
+      "id": "medium_wheatish",
+      "monk_range": [5, 6],
+      "tone_range": [41, 60],
+      "label": "Medium / Wheatish",
+      "undertone": "warm_golden",
+      "best_colour_families": ["earth_tones", "warm_oranges", "golden_yellows", "rich_reds", "warm_browns", "olive", "mustard"],
+      "avoid_colour_families": ["cool_greys", "icy_pastels", "neon"],
+      "best_colours": [
+        {"name": "Mustard Yellow", "hex": "#FFDB58", "score": 95},
+        {"name": "Burnt Orange", "hex": "#CC5500", "score": 93},
+        {"name": "Warm Red", "hex": "#C0392B", "score": 92},
+        {"name": "Golden Yellow", "hex": "#FFD700", "score": 90},
+        {"name": "Olive Green", "hex": "#6B8E23", "score": 88},
+        {"name": "Copper", "hex": "#B87333", "score": 87},
+        {"name": "Warm Brown", "hex": "#8B4513", "score": 85},
+        {"name": "Teal", "hex": "#008080", "score": 86},
+        {"name": "Deep Orange", "hex": "#FF8C00", "score": 89},
+        {"name": "Brick Red", "hex": "#CB4154", "score": 88},
+        {"name": "Warm Purple", "hex": "#9B59B6", "score": 84},
+        {"name": "Ivory", "hex": "#FFFFF0", "score": 82},
+        {"name": "Caramel", "hex": "#C68642", "score": 86},
+        {"name": "Forest Green", "hex": "#228B22", "score": 83}
+      ],
+      "avoid_colours": [
+        {"name": "Cool Grey", "hex": "#808080", "score": 30},
+        {"name": "Icy Blue", "hex": "#99C5C4", "score": 32},
+        {"name": "Pale Lavender", "hex": "#DCD0FF", "score": 28}
+      ]
+    },
+    {
+      "id": "deep_brown",
+      "monk_range": [7, 8],
+      "tone_range": [61, 80],
+      "label": "Deep / Brown",
+      "undertone": "warm_red_brown",
+      "best_colour_families": ["bright_jewels", "warm_whites", "rich_golds", "vibrant_oranges", "electric_blue", "fuchsia", "lime_green"],
+      "avoid_colour_families": ["dark_browns", "dark_maroon", "muddy_tones"],
+      "best_colours": [
+        {"name": "Electric Blue", "hex": "#7DF9FF", "score": 95},
+        {"name": "Fuchsia", "hex": "#FF00FF", "score": 93},
+        {"name": "Bright Orange", "hex": "#FF6600", "score": 92},
+        {"name": "Lime Green", "hex": "#32CD32", "score": 90},
+        {"name": "Bright Yellow", "hex": "#FFD700", "score": 91},
+        {"name": "Hot Pink", "hex": "#FF69B4", "score": 89},
+        {"name": "Turquoise", "hex": "#40E0D0", "score": 88},
+        {"name": "Bright Red", "hex": "#FF0000", "score": 87},
+        {"name": "Cobalt Blue", "hex": "#0047AB", "score": 86},
+        {"name": "Warm White", "hex": "#FAF0E6", "score": 88},
+        {"name": "Gold", "hex": "#FFD700", "score": 90},
+        {"name": "Coral", "hex": "#FF7F50", "score": 85},
+        {"name": "Bright Purple", "hex": "#8B00FF", "score": 84},
+        {"name": "Mint Green", "hex": "#98FF98", "score": 83}
+      ],
+      "avoid_colours": [
+        {"name": "Dark Brown", "hex": "#3D1C02", "score": 20},
+        {"name": "Dark Maroon", "hex": "#4A0000", "score": 22},
+        {"name": "Muddy Olive", "hex": "#6B6B00", "score": 25}
+      ]
+    },
+    {
+      "id": "very_deep",
+      "monk_range": [9, 10],
+      "tone_range": [81, 100],
+      "label": "Very Deep",
+      "undertone": "cool_blue_black",
+      "best_colour_families": ["bright_whites", "vivid_brights", "neon_accents", "metallics", "electric_tones", "bold_primaries"],
+      "avoid_colour_families": ["very_dark", "muddy_browns", "dark_navy_black"],
+      "best_colours": [
+        {"name": "Pure White", "hex": "#FFFFFF", "score": 98},
+        {"name": "Bright Yellow", "hex": "#FFFF00", "score": 95},
+        {"name": "Electric Blue", "hex": "#0000FF", "score": 93},
+        {"name": "Neon Green", "hex": "#39FF14", "score": 91},
+        {"name": "Hot Pink", "hex": "#FF69B4", "score": 92},
+        {"name": "Bright Red", "hex": "#FF0000", "score": 90},
+        {"name": "Gold", "hex": "#FFD700", "score": 94},
+        {"name": "Silver", "hex": "#C0C0C0", "score": 88},
+        {"name": "Turquoise", "hex": "#40E0D0", "score": 89},
+        {"name": "Fuchsia", "hex": "#FF00FF", "score": 90},
+        {"name": "Bright Orange", "hex": "#FF6600", "score": 87},
+        {"name": "Lime Green", "hex": "#00FF00", "score": 88},
+        {"name": "Cobalt Blue", "hex": "#0047AB", "score": 86},
+        {"name": "Vivid Purple", "hex": "#8B00FF", "score": 85}
+      ],
+      "avoid_colours": [
+        {"name": "Very Dark Navy", "hex": "#000033", "score": 15},
+        {"name": "Dark Charcoal", "hex": "#1C1C1C", "score": 18},
+        {"name": "Dark Brown", "hex": "#3D1C02", "score": 20}
+      ]
+    }
+  ]
+}

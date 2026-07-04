@@ -1,0 +1,465 @@
+{
+  "occasions": [
+    {
+      "id": "wedding_ceremonies",
+      "label": "Wedding & Ceremonies",
+      "event_types": [
+        {
+          "id": "wedding_main",
+          "label": "Wedding (Main Ceremony)",
+          "dress_codes": [
+            {
+              "id": "traditional_formal",
+              "label": "Traditional Formal",
+              "venue_types": ["temple", "banquet_hall", "outdoor_lawn", "heritage_venue"]
+            },
+            {
+              "id": "indo_western",
+              "label": "Indo-Western",
+              "venue_types": ["banquet_hall", "hotel", "outdoor_lawn"]
+            }
+          ]
+        },
+        {
+          "id": "wedding_reception",
+          "label": "Reception / Cocktail",
+          "dress_codes": [
+            {
+              "id": "cocktail_formal",
+              "label": "Cocktail Formal",
+              "venue_types": ["hotel", "rooftop", "banquet_hall"]
+            },
+            {
+              "id": "black_tie_optional",
+              "label": "Black Tie Optional",
+              "venue_types": ["hotel", "heritage_venue"]
+            }
+          ]
+        },
+        {
+          "id": "mehendi_sangeet",
+          "label": "Mehendi / Sangeet",
+          "dress_codes": [
+            {
+              "id": "festive_casual",
+              "label": "Festive Casual",
+              "venue_types": ["outdoor_lawn", "home", "banquet_hall"]
+            },
+            {
+              "id": "colorful_ethnic",
+              "label": "Colourful Ethnic",
+              "venue_types": ["outdoor_lawn", "home", "banquet_hall"]
+            }
+          ]
+        },
+        {
+          "id": "haldi",
+          "label": "Haldi Ceremony",
+          "dress_codes": [
+            {
+              "id": "casual_ethnic",
+              "label": "Casual Ethnic",
+              "venue_types": ["home", "outdoor_lawn"]
+            }
+          ]
+        },
+        {
+          "id": "engagement",
+          "label": "Engagement",
+          "dress_codes": [
+            {
+              "id": "semi_formal_ethnic",
+              "label": "Semi-Formal Ethnic",
+              "venue_types": ["banquet_hall", "hotel", "home"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "festive_religious",
+      "label": "Festive & Religious",
+      "event_types": [
+        {
+          "id": "diwali",
+          "label": "Diwali",
+          "dress_codes": [
+            {
+              "id": "festive_ethnic",
+              "label": "Festive Ethnic",
+              "venue_types": ["home", "community_hall", "outdoor"]
+            }
+          ]
+        },
+        {
+          "id": "eid",
+          "label": "Eid",
+          "dress_codes": [
+            {
+              "id": "traditional_modest",
+              "label": "Traditional Modest",
+              "venue_types": ["home", "mosque", "community_hall"]
+            }
+          ]
+        },
+        {
+          "id": "navratri_garba",
+          "label": "Navratri / Garba",
+          "dress_codes": [
+            {
+              "id": "traditional_dance",
+              "label": "Traditional Dance Wear",
+              "venue_types": ["outdoor", "community_hall", "ground"]
+            }
+          ]
+        },
+        {
+          "id": "puja_ceremony",
+          "label": "Puja / Religious Ceremony",
+          "dress_codes": [
+            {
+              "id": "modest_traditional",
+              "label": "Modest Traditional",
+              "venue_types": ["temple", "home", "community_hall"]
+            }
+          ]
+        },
+        {
+          "id": "christmas",
+          "label": "Christmas",
+          "dress_codes": [
+            {
+              "id": "festive_casual",
+              "label": "Festive Casual",
+              "venue_types": ["home", "church", "restaurant"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work_professional",
+      "label": "Work & Professional",
+      "event_types": [
+        {
+          "id": "office_daily",
+          "label": "Office / Daily Work",
+          "dress_codes": [
+            {
+              "id": "business_casual",
+              "label": "Business Casual",
+              "venue_types": ["office", "coworking"]
+            },
+            {
+              "id": "smart_casual",
+              "label": "Smart Casual",
+              "venue_types": ["office", "coworking", "cafe"]
+            }
+          ]
+        },
+        {
+          "id": "client_meeting",
+          "label": "Client Meeting / Presentation",
+          "dress_codes": [
+            {
+              "id": "business_formal",
+              "label": "Business Formal",
+              "venue_types": ["office", "conference_room", "hotel"]
+            }
+          ]
+        },
+        {
+          "id": "job_interview",
+          "label": "Job Interview",
+          "dress_codes": [
+            {
+              "id": "business_formal",
+              "label": "Business Formal",
+              "venue_types": ["office", "conference_room"]
+            },
+            {
+              "id": "business_casual",
+              "label": "Business Casual",
+              "venue_types": ["office", "startup_office"]
+            }
+          ]
+        },
+        {
+          "id": "conference_seminar",
+          "label": "Conference / Seminar",
+          "dress_codes": [
+            {
+              "id": "smart_casual",
+              "label": "Smart Casual",
+              "venue_types": ["hotel", "convention_center", "office"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social_going_out",
+      "label": "Social & Going Out",
+      "event_types": [
+        {
+          "id": "dinner_date",
+          "label": "Dinner Date",
+          "dress_codes": [
+            {
+              "id": "smart_casual",
+              "label": "Smart Casual",
+              "venue_types": ["restaurant", "rooftop", "cafe"]
+            },
+            {
+              "id": "cocktail",
+              "label": "Cocktail",
+              "venue_types": ["fine_dining", "rooftop", "hotel"]
+            }
+          ]
+        },
+        {
+          "id": "party_nightout",
+          "label": "Party / Night Out",
+          "dress_codes": [
+            {
+              "id": "party_glam",
+              "label": "Party Glam",
+              "venue_types": ["club", "lounge", "rooftop"]
+            },
+            {
+              "id": "smart_casual",
+              "label": "Smart Casual",
+              "venue_types": ["restaurant", "bar", "lounge"]
+            }
+          ]
+        },
+        {
+          "id": "brunch_lunch",
+          "label": "Brunch / Lunch Outing",
+          "dress_codes": [
+            {
+              "id": "casual_chic",
+              "label": "Casual Chic",
+              "venue_types": ["cafe", "restaurant", "outdoor"]
+            }
+          ]
+        },
+        {
+          "id": "house_party",
+          "label": "House Party",
+          "dress_codes": [
+            {
+              "id": "casual",
+              "label": "Casual",
+              "venue_types": ["home"]
+            },
+            {
+              "id": "festive_casual",
+              "label": "Festive Casual",
+              "venue_types": ["home"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "casual_everyday",
+      "label": "Casual & Everyday",
+      "event_types": [
+        {
+          "id": "daily_errands",
+          "label": "Daily Errands / Chores",
+          "dress_codes": [
+            {
+              "id": "casual",
+              "label": "Casual",
+              "venue_types": ["street", "market", "mall"]
+            }
+          ]
+        },
+        {
+          "id": "college_campus",
+          "label": "College / Campus",
+          "dress_codes": [
+            {
+              "id": "casual",
+              "label": "Casual",
+              "venue_types": ["campus", "classroom", "canteen"]
+            },
+            {
+              "id": "smart_casual",
+              "label": "Smart Casual",
+              "venue_types": ["campus", "seminar_hall"]
+            }
+          ]
+        },
+        {
+          "id": "shopping_mall",
+          "label": "Shopping / Mall",
+          "dress_codes": [
+            {
+              "id": "casual_chic",
+              "label": "Casual Chic",
+              "venue_types": ["mall", "market", "street"]
+            }
+          ]
+        },
+        {
+          "id": "home_lounge",
+          "label": "Home / Lounge",
+          "dress_codes": [
+            {
+              "id": "lounge_wear",
+              "label": "Lounge Wear",
+              "venue_types": ["home"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "label": "Travel",
+      "event_types": [
+        {
+          "id": "flight_travel",
+          "label": "Flight / Long Journey",
+          "dress_codes": [
+            {
+              "id": "travel_comfort",
+              "label": "Travel Comfort",
+              "venue_types": ["airport", "train_station"]
+            }
+          ]
+        },
+        {
+          "id": "beach_vacation",
+          "label": "Beach / Resort Vacation",
+          "dress_codes": [
+            {
+              "id": "resort_casual",
+              "label": "Resort Casual",
+              "venue_types": ["beach", "resort", "pool"]
+            }
+          ]
+        },
+        {
+          "id": "hill_station",
+          "label": "Hill Station / Mountains",
+          "dress_codes": [
+            {
+              "id": "layered_casual",
+              "label": "Layered Casual",
+              "venue_types": ["outdoor", "mountain", "cafe"]
+            }
+          ]
+        },
+        {
+          "id": "city_sightseeing",
+          "label": "City Sightseeing",
+          "dress_codes": [
+            {
+              "id": "casual_comfortable",
+              "label": "Casual Comfortable",
+              "venue_types": ["street", "museum", "outdoor"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sports_active",
+      "label": "Sports & Active",
+      "event_types": [
+        {
+          "id": "gym_workout",
+          "label": "Gym / Workout",
+          "dress_codes": [
+            {
+              "id": "activewear",
+              "label": "Activewear",
+              "venue_types": ["gym", "studio"]
+            }
+          ]
+        },
+        {
+          "id": "yoga_pilates",
+          "label": "Yoga / Pilates",
+          "dress_codes": [
+            {
+              "id": "yoga_wear",
+              "label": "Yoga Wear",
+              "venue_types": ["studio", "home", "outdoor"]
+            }
+          ]
+        },
+        {
+          "id": "outdoor_sport",
+          "label": "Outdoor Sport / Cricket / Football",
+          "dress_codes": [
+            {
+              "id": "sport_casual",
+              "label": "Sport Casual",
+              "venue_types": ["ground", "park", "outdoor"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "milestones_celebrations",
+      "label": "Milestones & Celebrations",
+      "event_types": [
+        {
+          "id": "birthday_party",
+          "label": "Birthday Party",
+          "dress_codes": [
+            {
+              "id": "festive_casual",
+              "label": "Festive Casual",
+              "venue_types": ["home", "restaurant", "banquet_hall"]
+            },
+            {
+              "id": "party_glam",
+              "label": "Party Glam",
+              "venue_types": ["club", "rooftop", "banquet_hall"]
+            }
+          ]
+        },
+        {
+          "id": "graduation",
+          "label": "Graduation Ceremony",
+          "dress_codes": [
+            {
+              "id": "smart_formal",
+              "label": "Smart Formal",
+              "venue_types": ["auditorium", "campus", "hotel"]
+            }
+          ]
+        },
+        {
+          "id": "anniversary",
+          "label": "Anniversary",
+          "dress_codes": [
+            {
+              "id": "romantic_formal",
+              "label": "Romantic Formal",
+              "venue_types": ["fine_dining", "hotel", "rooftop"]
+            }
+          ]
+        },
+        {
+          "id": "baby_shower",
+          "label": "Baby Shower / Godh Bharai",
+          "dress_codes": [
+            {
+              "id": "festive_casual",
+              "label": "Festive Casual",
+              "venue_types": ["home", "banquet_hall"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
