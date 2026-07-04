@@ -1,0 +1,17 @@
+# (Temporary cache files)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# (Frontend packages)
+node_modules/
+.next/
+dist/
+
+# Operating system files
+Thumbs.db
+desktop.ini
+.DS_Store
