@@ -1,9 +1,13 @@
+from __future__ import annotations
+
 import json
 import os
+from functools import lru_cache
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 
 
+@lru_cache(maxsize=None)
 def _load(filename):
     with open(os.path.join(DATA_DIR, filename), encoding="utf-8") as f:
         return json.load(f)
