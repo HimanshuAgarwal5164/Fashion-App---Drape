@@ -140,14 +140,14 @@ export default function DrapePage() {
   }
 
   return (
-    <div style={{ minHeight: "100vh", background: "#f8fafc", fontFamily: "'Inter', system-ui, sans-serif" }}>
+    <div className="app-shell">
       {cameraOpen && <CameraModal onCapture={sendImageForDetection} onClose={() => setCameraOpen(false)} />}
-      <input ref={fileRef} type="file" accept="image/*" style={{ display: "none" }} onChange={handleImageUpload} />
+      <input ref={fileRef} type="file" accept="image/*" className="hidden-file-input" onChange={handleImageUpload} />
 
-      <div style={{ background: "linear-gradient(135deg, #1e1b4b 0%, #312e81 100%)", color: "#fff", padding: "32px 24px 0", textAlign: "center" }}>
-        <h1 style={{ margin: 0, fontSize: 36, fontWeight: 800, letterSpacing: 0 }}>DRAPE</h1>
-        <p style={{ margin: "6px 0 20px", opacity: 0.75, fontSize: 15 }}>AI-powered outfit recommendations for every occasion</p>
-        <div style={{ display: "flex", justifyContent: "center", gap: 4 }}>
+      <div className="app-header">
+        <h1 className="app-title">DRAPE</h1>
+        <p className="app-subtitle">AI-powered outfit recommendations for every occasion</p>
+        <div className="tab-list">
           {[
             { id: "occasion", label: "Occasion Finder" },
             { id: "wardrobe", label: "Wardrobe Builder" },
@@ -155,7 +155,7 @@ export default function DrapePage() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              style={{ padding: "10px 24px", borderRadius: "10px 10px 0 0", border: "none", background: activeTab === tab.id ? "#f8fafc" : "rgba(255,255,255,0.15)", color: activeTab === tab.id ? "#1e1b4b" : "#fff", fontWeight: 700, fontSize: 14, cursor: "pointer" }}
+              className={`tab-button${activeTab === tab.id ? " active" : ""}`}
             >
               {tab.label}
             </button>
@@ -163,9 +163,9 @@ export default function DrapePage() {
         </div>
       </div>
 
-      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "28px 16px" }}>
+      <div className="page-container">
         {error && (
-          <div style={{ background: "#fef2f2", border: "1px solid #fecaca", borderRadius: 10, padding: "12px 16px", marginBottom: 20, color: "#dc2626", fontSize: 14 }}>
+          <div className="alert alert-error">
             {error}
           </div>
         )}

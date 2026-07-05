@@ -46,25 +46,25 @@ export default function CameraModal({ onCapture, onClose }) {
   }
 
   return (
-    <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.75)", zIndex: 1000, display: "flex", alignItems: "center", justifyContent: "center", padding: 16 }}>
-      <div style={{ background: "#fff", borderRadius: 20, padding: 24, width: 360, maxWidth: "100%", boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-          <h3 style={{ margin: 0, fontSize: 16, fontWeight: 700, color: "#1e293b" }}>Analyse Your Look</h3>
-          <button onClick={onClose} style={{ background: "none", border: "none", fontSize: 20, cursor: "pointer", color: "#94a3b8" }}>x</button>
+    <div className="modal-backdrop">
+      <div className="modal-panel">
+        <div className="modal-head">
+          <h3 className="modal-title">Analyse Your Look</h3>
+          <button onClick={onClose} className="modal-close">x</button>
         </div>
         {error ? (
-          <p style={{ color: "#dc2626", fontSize: 13, textAlign: "center", padding: "20px 0" }}>{error}</p>
+          <p className="modal-error">{error}</p>
         ) : (
           <>
-            <video ref={videoRef} style={{ width: "100%", borderRadius: 12, background: "#000", display: "block" }} muted playsInline />
-            <canvas ref={canvasRef} style={{ display: "none" }} />
-            <p style={{ fontSize: 12, color: "#94a3b8", textAlign: "center", margin: "10px 0" }}>
+            <video ref={videoRef} className="camera-video" muted playsInline />
+            <canvas ref={canvasRef} className="hidden-canvas" />
+            <p className="camera-help">
               Position yourself clearly in frame
             </p>
             <button
               onClick={capture}
               disabled={!ready}
-              style={{ width: "100%", padding: "11px 0", borderRadius: 10, border: "none", background: ready ? "linear-gradient(135deg, #6366f1, #8b5cf6)" : "#c7d2fe", color: "#fff", fontSize: 14, fontWeight: 700, cursor: ready ? "pointer" : "not-allowed" }}
+              className="capture-button"
             >
               Capture & Analyse
             </button>
